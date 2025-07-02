@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Company Blog – Girigreen Driving School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/logo.JPG" />
+</head>
+
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
+
+    <!-- Navbar -->
+    <header class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="assets/logo.JPG" alt="Girigreen Logo" class="h-10 w-10 rounded-full" />
+                <h1 class="text-2xl font-bold tracking-wide">Girigreen Driving School</h1>
+            </div>
+            <nav class="space-x-8 text-lg font-semibold">
+                <a href="index.html" class="hover:text-green-300 transition">Home</a>
+                <a href="about.html" class="hover:text-green-300 transition">About</a>
+                <a href="services.html" class="hover:text-green-300 transition">Services</a>
+                <a href="blog.html" class="text-green-300 underline font-semibold transition">Blog</a>
+                <a href="contact.html" class="hover:text-green-300 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Student Success Carousel -->
+    <section class="bg-green-50 py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-green-800 mb-6">🌟 Student Success Corner</h2>
+            <p class="text-gray-700 mb-10">See how Girigreen has transformed the lives of learners across Nairobi.</p>
+
+            <div
+                class="relative bg-white rounded-2xl shadow-xl border-l-8 border-green-600 p-8 text-left min-h-[220px] transition-all duration-500">
+                <blockquote id="testimonial-text" class="italic text-lg text-gray-700 transition-opacity duration-500">
+                    “I was so nervous about driving until I joined Girigreen. The instructors were patient and
+                    supportive. Today, I not only drive confidently — I teach others too!”
+                </blockquote>
+                <p id="testimonial-author" class="mt-4 text-green-700 font-semibold transition-opacity duration-500">
+                    – Brian, now a certified instructor
+                </p>
+
+                <!-- Navigation Arrows -->
+                <button id="prev-btn" aria-label="Previous testimonial"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 text-green-700 hover:text-green-900 text-2xl">
+                    &#8592;
+                </button>
+                <button id="next-btn" aria-label="Next testimonial"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 text-green-700 hover:text-green-900 text-2xl">
+                    &#8594;
+                </button>
+            </div>
+
+            <a href="contact.html"
+                class="inline-block mt-10 bg-green-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-800 transition">
+                Start Your Journey →
+            </a>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 px-6 bg-green-50">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-3xl font-bold text-green-800 mb-8">Photo Gallery</h3>
+            <p class="text-gray-700 mb-10 max-w-xl mx-auto">Snapshots from our training sessions, events, and student
+                milestones.</p>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/ntsa_riders.png" alt="NTSA supervisors examining riders"
+                        class="w-full h-64 object-cover rounded-lg" />
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/gallery_2.png" alt="Classroom learning"
+                        class="w-full h-64 object-cover rounded-lg" />
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/gallery_3.png" alt="Practical driving test"
+                        class="w-full h-64 object-cover rounded-lg" />
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/gallery_4.png" alt="Student with certificate"
+                        class="w-full h-64 object-cover rounded-lg" />
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/gallery_5.png" alt="Instructor giving guidance"
+                        class="w-full h-64 object-cover rounded-lg" />
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                    <img src="assets/gallery_6.png" alt="Team at the field"
+                        class="w-full h-64 object-cover rounded-lg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="bg-green-700 py-16 px-6 text-center text-white">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-extrabold mb-6">Stay Updated with Our Latest News</h3>
+            <p class="mb-8 max-w-xl mx-auto">
+                Subscribe to our newsletter to receive driving tips, school updates, and special offers directly in your
+                inbox.
+            </p>
+            <form class="flex flex-col sm:flex-row justify-center max-w-md mx-auto gap-4" action="#" method="post">
+                <input type="email" placeholder="Enter your email" required
+                    class="p-4 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-300 flex-grow" />
+                <button type="submit"
+                    class="bg-white text-green-700 font-semibold px-6 py-4 rounded-lg hover:bg-green-100 transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-6 text-center">
+        <p>&copy; 2025 Girigreen Driving School. All rights reserved.</p>
+    </footer>
+
+    <!-- Carousel Script -->
+    <script>
+        const testimonials = [
+            {
+                text: "“I was so nervous about driving until I joined Girigreen. The instructors were patient and supportive. Today, I not only drive confidently — I teach others too!”",
+                author: "– Brian, now a certified instructor"
+            },
+            {
+                text: "“Girigreen made me feel safe and confident on the road. I passed my test on the first try!”",
+                author: "– Sharon, proud license holder"
+            },
+            {
+                text: "“What stood out was how practical the training was. I even learned how to check my car before long trips.”",
+                author: "– Kevin, road trip enthusiast"
+            }
+        ];
+
+        let current = 0;
+        const textEl = document.getElementById("testimonial-text");
+        const authorEl = document.getElementById("testimonial-author");
+
+        function updateTestimonial(index) {
+            textEl.style.opacity = 0;
+            authorEl.style.opacity = 0;
+            setTimeout(() => {
+                textEl.textContent = testimonials[index].text;
+                authorEl.textContent = testimonials[index].author;
+                textEl.style.opacity = 1;
+                authorEl.style.opacity = 1;
+            }, 300);
+        }
+
+        document.getElementById("prev-btn").addEventListener("click", () => {
+            current = (current - 1 + testimonials.length) % testimonials.length;
+            updateTestimonial(current);
+        });
+
+        document.getElementById("next-btn").addEventListener("click", () => {
+            current = (current + 1) % testimonials.length;
+            updateTestimonial(current);
+        });
+
+        setInterval(() => {
+            current = (current + 1) % testimonials.length;
+            updateTestimonial(current);
+        }, 7000);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Girigreen Driving School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <link rel="icon" href="assets/logo.JPG" />
+</head>
+
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
+
+    <!-- Navbar -->
+    <header class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="assets/logo.JPG" alt="Girigreen Logo" class="h-12 w-12 rounded-full" />
+                <h1 class="text-3xl font-extrabold tracking-wide">Girigreen Driving School</h1>
+            </div>
+            <nav class="space-x-8 text-lg font-semibold">
+                <a href="index.html" class="text-green-300 underline">Home</a>
+                <a href="about.html" class="hover:text-green-300 transition">About</a>
+                <a href="services.html" class="hover:text-green-300 transition">Services</a>
+                <a href="blog.html" class="hover:text-green-300 transition">Blog</a>
+                <a href="contact.html" class="hover:text-green-300 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="relative bg-gradient-to-r from-green-600 to-green-800 text-white py-28 px-6 text-center overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-5xl font-extrabold mb-6 drop-shadow-lg animate-fade-in">
+                Welcome to Girigreen Driving School
+            </h2>
+            <p class="text-xl max-w-3xl mx-auto mb-10 drop-shadow-md animate-slide-up delay-200">
+                Your journey to safe and professional driving starts here. Get expert training from certified
+                instructors with modern equipment.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="about.html"
+                    class="bg-white text-green-700 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-green-100 transition duration-300">
+                    Learn More
+                </a>
+                <a href="enroll.html"
+                    class="bg-green-900 bg-opacity-90 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300">
+                    Enroll Now
+                </a>
+            </div>
+        </div>
+        <!-- Decorative shapes -->
+        <div aria-hidden="true"
+            class="absolute top-0 left-0 w-48 h-48 bg-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob">
+        </div>
+        <div aria-hidden="true"
+            class="absolute bottom-0 right-0 w-72 h-72 bg-green-700 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-blob animation-delay-2000">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+            <!-- Feature 1 -->
+            <div class="bg-green-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <img src="assets/training_vehicle.jpeg" alt="Modern Training Vehicles"
+                    class="rounded-lg shadow-md h-52 w-full object-cover mb-6" />
+                <h3 class="text-2xl font-semibold mb-3 text-green-700">Modern Training Vehicles</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Our dual-control cars ensure safety while building learner confidence on the road.
+                </p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-green-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <img src="assets/classroom.jpeg" alt="Comfortable Classrooms"
+                    class="rounded-lg shadow-md h-52 w-full object-cover mb-6" />
+                <h3 class="text-2xl font-semibold mb-3 text-green-700">Comfortable Classrooms</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Theory sessions taught in a relaxed, well-equipped learning environment.
+                </p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-green-50 p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                <img src="assets/practical_training.jpeg" alt="Practical Road Tests"
+                    class="rounded-lg shadow-md h-52 w-full object-cover mb-6" />
+                <h3 class="text-2xl font-semibold mb-3 text-green-700">Practical Road Tests</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Hands-on experience navigating Nairobi’s roads under instructor supervision.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-green-50 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-4xl font-extrabold mb-6 text-green-800">Ready to start your driving journey?</h3>
+            <p class="text-gray-700 mb-10 max-w-xl mx-auto">
+                Enroll today and take the first step toward becoming a safe, confident driver with Girigreen.
+            </p>
+            <a href="contact.html"
+                class="inline-block bg-green-700 text-white px-10 py-4 rounded-full shadow-lg hover:bg-green-800 hover:shadow-xl transition duration-300 font-semibold">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-6 text-center">
+        <p>&copy; 2025 Girigreen Driving School. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom Animations -->
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 1.2s ease forwards;
+        }
+
+        @keyframes slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-slide-up {
+            animation: slide-up 1s ease forwards;
+        }
+
+        @keyframes blob {
+
+            0%,
+            100% {
+                transform: translate(0px, 0px) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -50px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
+        }
+
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
+
+</body>
+
+</html>

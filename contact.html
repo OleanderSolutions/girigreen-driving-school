@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Girigreen Driving School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <link rel="icon" href="assets/logo.JPG" />
+</head>
+
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
+
+    <!-- Navbar -->
+    <header class="bg-green-700 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="assets/logo.JPG" alt="Girigreen Logo" class="h-12 w-12 rounded-full shadow-md" />
+                <h1 class="text-3xl font-extrabold tracking-wide drop-shadow-md">Girigreen Driving School</h1>
+            </div>
+            <nav class="space-x-10 text-lg font-semibold">
+                <a href="index.html" class="hover:text-green-300 transition">Home</a>
+                <a href="about.html" class="hover:text-green-300 transition">About</a>
+                <a href="services.html" class="hover:text-green-300 transition">Services</a>
+                <a href="blog.html" class="hover:text-green-300 transition">Blog</a>
+                <a href="contact.html" class="text-green-300 underline font-semibold transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Contact Section -->
+    <section
+        class="relative bg-gradient-to-r from-green-600 to-green-800 py-24 px-6 text-white text-center overflow-hidden">
+        <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg animate-fade-in">Get in Touch with Us!</h2>
+        <p class="text-xl max-w-3xl mx-auto mb-12 drop-shadow-md animate-slide-up delay-200">
+            Have questions, want to enroll, or need assistance? Our friendly team is ready to help you start your
+            driving journey.
+        </p>
+        <div
+            class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 bg-white bg-opacity-10 rounded-3xl p-10 shadow-lg backdrop-blur-md">
+
+            <!-- Contact Form -->
+            <form class="space-y-8" action="https://formsubmit.co/girigreendrivingschool@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="thankyou.html" />
+                <div>
+                    <label class="block font-semibold mb-2 text-white">Full Name</label>
+                    <input type="text" name="name" required
+                        class="w-full rounded-lg p-4 focus:outline-none focus:ring-4 focus:ring-green-300 text-gray-800" />
+                </div>
+                <div>
+                    <label class="block font-semibold mb-2 text-white">Email</label>
+                    <input type="email" name="email" required
+                        class="w-full rounded-lg p-4 focus:outline-none focus:ring-4 focus:ring-green-300 text-gray-800" />
+                </div>
+                <div>
+                    <label class="block font-semibold mb-2 text-white">Message</label>
+                    <textarea name="message" rows="6" required
+                        class="w-full rounded-lg p-4 focus:outline-none focus:ring-4 focus:ring-green-300 text-gray-800"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-white text-green-700 font-extrabold py-4 rounded-full shadow-lg hover:bg-green-100 transition duration-300">
+                    Send Message
+                </button>
+            </form>
+
+            <!-- Contact Info -->
+            <div class="space-y-10 text-left text-white">
+                <div class="flex items-start space-x-4">
+                    <svg class="w-8 h-8 text-green-300" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M3 10h18M3 6h18M3 14h18M3 18h18"></path>
+                    </svg>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-1">Visit Us</h3>
+                        <p>Girigreen Driving School</p>
+                        <p>Head Office: Hazina Towers, 1st Floor, Suite 10</p>
+                        <p>Operation’s Office: Kibra-Ayany Road, Opposite Equity Bank Branch</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <svg class="w-8 h-8 text-green-300" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.38 12.38 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8 10a16 16 0 0 0 6 6l1.36-1.36a2 2 0 0 1 2.11-.45 12.38 12.38 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-1">Call or WhatsApp</h3>
+                        <p>+254 715 993 001</p>
+                        <p>+254 735 199 616</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4">
+                    <svg class="w-8 h-8 text-green-300" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path d="M4 4h16v16H4z"></path>
+                        <path d="M22 6l-10 7L2 6"></path>
+                    </svg>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-1">Email Us</h3>
+                        <p>girigreendrivingschool@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="max-w-6xl mx-auto mt-16 rounded-3xl overflow-hidden shadow-2xl">
+            <iframe class="w-full h-96"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.193256349034!2d36.73955561083983!3d-1.3108552999999976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a7dee92887b%3A0x1753f04ccb777ab!2sEquity%20Bank%20Kibera!5e0!3m2!1sen!2ske!4v1749651814477!5m2!1sen!2ske"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-6 text-center mt-20">
+        <p>&copy; 2025 Girigreen Driving School. All rights reserved.</p>
+    </footer>
+
+    <!-- Animations -->
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 1.5s ease forwards;
+        }
+
+        @keyframes slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-slide-up {
+            animation: slide-up 1.2s ease forwards;
+        }
+    </style>
+
+</body>
+
+</html>
