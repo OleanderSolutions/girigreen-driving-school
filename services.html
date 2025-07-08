@@ -3,184 +3,129 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services | Girigreen Driving School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Services – Girigreen Driving School</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
     <link rel="icon" href="assets/logo.JPG" />
-    <style>
-        .modal {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .modal img {
-            max-height: 90vh;
-        }
-
-        .animate-cta {
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
-        }
-    </style>
 </head>
 
 <body class="bg-white text-gray-800 font-sans scroll-smooth">
 
     <!-- Navbar -->
-    <header class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img src="assets/logo.JPG" alt="Girigreen Logo" class="h-10 w-10 rounded-full">
-                <h1 class="text-2xl font-bold">Girigreen Driving School</h1>
+    <header class="bg-green-700 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="assets/logo.JPG" alt="Girigreen Logo" class="h-12 w-12 rounded-full shadow-md" />
+                <h1 class="text-3xl font-extrabold tracking-wide drop-shadow-md">Girigreen Driving School</h1>
             </div>
-            <nav class="space-x-6">
-                <a href="index.html" class="hover:text-green-300">Home</a>
-                <a href="about.html" class="hover:text-green-300">About</a>
-                <a href="services.html" class="text-green-300 underline font-semibold">Services</a>
-                <a href="blog.html" class="hover:text-green-300">Blog</a>
-                <a href="contact.html" class="hover:text-green-300">Contact</a>
-                <a href="enroll.html" class="hover:text-green-300 transition">enroll</a>
-
+            <nav class="space-x-10 text-lg font-semibold">
+                <a href="index.html" class="hover:text-green-300 transition">Home</a>
+                <a href="about.html" class="hover:text-green-300 transition">About</a>
+                <a href="services.html" class="text-green-300 underline font-semibold transition">Services</a>
+                <a href="blog.html" class="hover:text-green-300 transition">Blog</a>
+                <a href="contact.html" class="hover:text-green-300 transition">Contact</a>
+                <a href="enroll.html" class="hover:text-green-300 transition">Enroll</a>
             </nav>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section class="bg-green-50 py-16 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-green-800 mb-4 animate-bounce">Our Services</h2>
-            <p class="text-gray-700 mb-12 text-lg">Explore our wide range of driving courses, designed for beginners,
-                professionals, and everyone in between.</p>
+    <!-- Hero -->
+    <section class="py-24 px-6 text-center bg-green-50">
+        <h2 class="text-5xl font-extrabold text-green-800 mb-6 drop-shadow-md animate-fade-in">Our Training Programs
+        </h2>
+        <p class="text-lg max-w-3xl mx-auto text-gray-700 animate-slide-up delay-200">
+            Whether you're a first-time driver or looking to upgrade your license, we offer comprehensive driving and
+            safety training.
+        </p>
+    </section>
 
-            <div class="grid md:grid-cols-3 gap-8 text-left">
-                <!-- Service Cards -->
-                <!-- Repeatable pattern -->
-                <div onclick="openModal(this)" data-img="assets/a3.avif"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/a3.avif" alt="Motorcycle Training Class A2 & A3"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">Class A2 & A3</h3>
-                    <p class="text-gray-600">Ride medium to large motorcycles with power and confidence.</p>
-                </div>
+    <!-- Service Cards -->
+    <section class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 text-left">
 
-                <div onclick="openModal(this)" data-img="assets/b2.webp"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/b2.webp" alt="Light Vehicles Class B, B1 & B3"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">Class B, B1 & B3</h3>
-                    <p class="text-gray-600">Learn to drive light vehicles confidently and safely.</p>
-                </div>
-
-                <div onclick="openModal(this)" data-img="assets/bc.jpg"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/bc.jpg" alt="Commercial Vehicles Class B & C"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">Class B & C</h3>
-                    <p class="text-gray-600">Operate both private and light commercial vehicles.</p>
-                </div>
-
-                <div onclick="openModal(this)" data-img="assets/c2.avif"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/c2.avif" alt="Heavy Vehicles Class C1 & C2"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">Class C, C1 & C2</h3>
-                    <p class="text-gray-600">Drive pickups, lorries, and light trucks like a pro.</p>
-                </div>
-
-                <div onclick="openModal(this)" data-img="assets/dc.webp"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/dc.webp" alt="Public Transport Class D"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">D, D1 & D2</h3>
-                    <p class="text-gray-600">Get certified to drive taxis, matatus, minibuses, and medium buses.</p>
-                </div>
-
-                <div onclick="openModal(this)" data-img="assets/d3.jpeg"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/d3.jpeg" alt="Public Service Vehicle PSV Training"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">PSV</h3>
-                    <p class="text-gray-600">Receive Public Service Vehicle (PSV) driver training and certification.</p>
-                </div>
-
-                <div onclick="openModal(this)" data-img="assets/safety.jpeg"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/safety.jpeg" alt="Road Safety Education"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">Road Safety Campaign</h3>
-                    <p class="text-gray-600">Promote safe roads through our community-focused training and outreach.</p>
-                </div>
-
-                <div onclick="openModal(this)" data-img="assets/packages.jpg"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/packages.jpg" alt="Computer Skills Course"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">Computer Packages</h3>
-                    <p class="text-gray-600">Boost your digital literacy with training in Office tools, email, and
-                        internet use.</p>
-                </div>
-
-                <div onclick="openModal(this)" data-img="assets/mechanics.jpeg"
-                    class="bg-white p-6 rounded-xl shadow hover:shadow-2xl transform transition duration-300 hover:scale-105 cursor-pointer">
-                    <img src="assets/mechanics.jpeg" alt="Vehicle Maintenance Basics"
-                        class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold text-green-700 mb-2">Basic Mechanics</h3>
-                    <p class="text-gray-600">Learn essential car care, engine basics, and how to handle breakdowns.</p>
-                </div>
+            <div onclick="openModal(this)" data-img="assets/a3.avif" class="card animate-slide-up">
+                <img src="assets/a3.avif" alt="Motorcycle Training Class A2 & A3"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">Class A2 & A3</h3>
+                <p class="text-gray-600">Ride medium to large motorcycles with power and confidence.</p>
             </div>
+
+            <div onclick="openModal(this)" data-img="assets/b2.webp" class="card animate-slide-up">
+                <img src="assets/b2.webp" alt="Light Vehicles Class B, B1 & B3"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">Class B, B1 & B3</h3>
+                <p class="text-gray-600">Learn to drive light vehicles confidently and safely.</p>
+            </div>
+
+            <div onclick="openModal(this)" data-img="assets/bc.jpg" class="card animate-slide-up">
+                <img src="assets/bc.jpg" alt="Commercial Vehicles Class B & C"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">Class B & C</h3>
+                <p class="text-gray-600">Operate both private and light commercial vehicles.</p>
+            </div>
+
+            <div onclick="openModal(this)" data-img="assets/c2.avif" class="card animate-slide-up">
+                <img src="assets/c2.avif" alt="Heavy Vehicles Class C1 & C2"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">Class C, C1 & C2</h3>
+                <p class="text-gray-600">Drive pickups, lorries, and light trucks like a pro.</p>
+            </div>
+
+            <div onclick="openModal(this)" data-img="assets/dc.webp" class="card animate-slide-up">
+                <img src="assets/dc.webp" alt="Public Transport Class D"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">D, D1 & D2</h3>
+                <p class="text-gray-600">Get certified to drive taxis, matatus, minibuses, and medium buses.</p>
+            </div>
+
+            <div onclick="openModal(this)" data-img="assets/d3.jpeg" class="card animate-slide-up">
+                <img src="assets/d3.jpeg" alt="Public Service Vehicle PSV Training"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">PSV</h3>
+                <p class="text-gray-600">Receive Public Service Vehicle (PSV) driver training and certification.</p>
+            </div>
+
+            <div onclick="openModal(this)" data-img="assets/safety.jpeg" class="card animate-slide-up">
+                <img src="assets/safety.jpeg" alt="Road Safety Education"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">Road Safety Campaign</h3>
+                <p class="text-gray-600">Promote safe roads through our community-focused training and outreach.</p>
+            </div>
+
+            <div onclick="openModal(this)" data-img="assets/packages.jpg" class="card animate-slide-up">
+                <img src="assets/packages.jpg" alt="Computer Skills Course"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">Computer Packages</h3>
+                <p class="text-gray-600">Boost your digital literacy with training in Office tools, email, and internet
+                    use.</p>
+            </div>
+
+            <div onclick="openModal(this)" data-img="assets/mechanics.jpeg" class="card animate-slide-up">
+                <img src="assets/mechanics.jpeg" alt="Vehicle Maintenance Basics"
+                    class="w-full h-40 object-cover rounded mb-4" />
+                <h3 class="text-xl font-bold text-green-700 mb-2">Basic Mechanics</h3>
+                <p class="text-gray-600">Learn essential car care, engine basics, and how to handle breakdowns.</p>
+            </div>
+
         </div>
     </section>
 
-    <!-- Modal -->
-    <div id="modal" class="modal fixed inset-0 z-50 hidden items-center justify-center p-4">
-        <div class="relative bg-white rounded shadow-lg max-w-3xl w-full">
-            <button onclick="closeModal()" aria-label="Close modal"
-                class="absolute top-2 right-2 text-red-500 hover:text-red-700 text-3xl font-bold">&times;</button>
-            <img id="modalImg" src="" alt="Zoomed view" class="rounded-lg max-w-full mx-auto" />
-        </div>
-    </div>
-
-    <!-- Call to Action -->
-    <section class="bg-green-100 py-12 text-center animate-cta">
-        <h3 class="text-2xl font-bold text-green-900">Ready to Start Your Driving Journey?</h3>
-        <p class="text-gray-700 my-4">Join hundreds of successful students and become a confident driver with Girigreen.
-        </p>
-        <a href="contact.html"
-            class="bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800 transition font-semibold">Enroll Now</a>
+    <!-- CTA -->
+    <section class="bg-green-700 text-white py-20 px-6 text-center">
+        <h2 class="text-4xl font-extrabold mb-6">Ready to Hit the Road?</h2>
+        <p class="text-lg mb-8">Join Girigreen today and become a confident, responsible driver.</p>
+        <a href="enroll.html"
+            class="inline-block bg-white text-green-700 font-bold px-10 py-4 rounded-full shadow-lg hover:bg-green-100 transition duration-300">
+            Enroll Now
+        </a>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-green-900 text-white py-6 text-center">
+    <footer class="bg-green-900 text-white py-8 text-center">
         <p>&copy; 2025 Girigreen Driving School. All rights reserved.</p>
     </footer>
-
-    <!-- Modal Script -->
-    <script defer>
-        function openModal(el) {
-            const imgSrc = el.getAttribute('data-img');
-            const modal = document.getElementById('modal');
-            document.getElementById('modalImg').src = imgSrc;
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('modal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-        }
-    </script>
 
 </body>
 
