@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Girigreen Driving School loaded.");
 
   // Newsletter Form Logic
-  const form = document.getElementById("newsletter-form");
-  const emailInput = document.getElementById("email-input");
+  const form = document.querySelector("form[action='#']");
+  const emailInput = form?.querySelector("input[type='email']");
   const message = document.getElementById("newsletter-msg");
 
   if (form && emailInput && message) {
@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const email = emailInput.value.trim();
 
-      if (email) {
+      if (email && email.includes("@")) {
         message.textContent = "Thank you for subscribing!";
-        message.classList.remove("hidden");
+        message.classList.remove("hidden", "text-red-200");
         message.classList.add("text-green-100");
         emailInput.value = "";
       } else {
         message.textContent = "Please enter a valid email.";
-        message.classList.remove("hidden");
+        message.classList.remove("hidden", "text-green-100");
         message.classList.add("text-red-200");
       }
     });
