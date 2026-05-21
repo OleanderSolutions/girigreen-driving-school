@@ -4,105 +4,414 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Enroll Now – Girigreen Driving School</title>
+    <title>Enroll | Girigreen Driving School</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
+
     <link rel="icon" href="assets/logo.JPG" />
 </head>
 
-<body class="bg-gradient-to-br from-green-100 via-green-50 to-white text-gray-800 font-sans scroll-smooth">
+<body class="bg-white text-gray-800 font-sans scroll-smooth">
 
     <!-- Navbar -->
     <header class="bg-green-700 text-white sticky top-0 z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-            <!-- Logo and Title -->
+
             <div class="flex items-center space-x-3">
-                <img src="assets/logo.JPG" alt="Girigreen Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full" />
-                <h1 class="text-xl sm:text-3xl font-extrabold tracking-wide">Girigreen Driving School</h1>
+                <img src="assets/logo.JPG"
+                    alt="Girigreen Logo"
+                    class="h-10 w-10 sm:h-12 sm:w-12 rounded-full" />
+
+                <h1 class="text-xl sm:text-3xl font-extrabold tracking-wide">
+                    Girigreen Driving School
+                </h1>
             </div>
-    
+
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="menu-toggle" class="focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                        stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="w-8 h-8"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
                         <path d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </div>
-    
-            <!-- Navigation Links -->
+
+            <!-- Nav -->
             <nav id="nav-links"
                 class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg font-semibold absolute md:static bg-green-700 md:bg-transparent top-20 left-0 w-full md:w-auto px-6 py-6 md:p-0 z-50">
+
                 <a href="index.html" class="hover:text-green-300 transition">Home</a>
                 <a href="about.html" class="hover:text-green-300 transition">About</a>
                 <a href="services.html" class="hover:text-green-300 transition">Services</a>
                 <a href="blog.html" class="hover:text-green-300 transition">Blog</a>
                 <a href="contact.html" class="hover:text-green-300 transition">Contact</a>
-                <a href="enroll.html" class="text-green-300 underline font-semibold transition">Enroll</a>
+
+                <a href="enroll.html"
+                    class="text-green-300 underline font-semibold transition">
+                    Enroll
+                </a>
+                <a href="enquiries.html" class="hover:text-green-300 transition">Enquiries</a>
             </nav>
         </div>
     </header>
-  
 
-    <!-- Enrollment Section -->
-    <section class="py-20 px-4 sm:px-6 max-w-2xl mx-auto text-center bg-white rounded-3xl shadow-2xl mt-12">
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-green-800 mb-6 tracking-tight">Start Your Driving Journey
-            Today!</h2>
-        <p class="text-gray-700 mb-10 leading-relaxed text-lg">
-            Download our official enrollment form below. Print it, fill it out, and bring it to our offices to begin
-            your path to becoming a confident, safe driver.
-        </p>
-        <a href="assets/STUDENT ENROLLMENT FORM 2024.pdf" download
-            class="inline-block bg-gradient-to-r from-green-600 to-green-700 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:from-green-700 hover:to-green-800 transition duration-300">
-            Download Enrollment Form
-        </a>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-green-600 to-green-800 text-white py-24 px-4 sm:px-6 text-center overflow-hidden">
+
+        <div class="max-w-4xl mx-auto relative z-10">
+
+            <h2 class="text-4xl sm:text-6xl font-extrabold mb-6 animate-fade-in">
+                Start Your Driving Journey Today
+            </h2>
+
+            <p class="text-lg sm:text-xl text-green-50 max-w-3xl mx-auto animate-slide-up">
+                Enroll with Girigreen Driving School and gain the skills,
+                confidence, and experience needed to become a safe professional driver.
+            </p>
+        </div>
+
+        <!-- Decorative Blobs -->
+        <div
+            class="absolute top-0 left-0 w-40 h-40 bg-green-400 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-blob">
+        </div>
+
+        <div
+            class="absolute bottom-0 right-0 w-72 h-72 bg-green-900 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000">
+        </div>
+
     </section>
 
-    <!-- Testimonials -->
-    <section class="py-20 px-4 sm:px-6 max-w-6xl mx-auto mt-20 bg-green-50 rounded-3xl shadow-lg">
-        <h3 class="text-3xl sm:text-4xl font-extrabold text-green-800 mb-12 text-center">What Our Happy Students Say
-        </h3>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 sm:p-8 rounded-xl shadow hover:shadow-2xl transition duration-300">
-                <p class="text-gray-700 mb-6 italic">
-                    "Girigreen made learning to drive fun and stress-free! The instructors are patient and
-                    knowledgeable."
-                </p>
-                <h4 class="font-bold text-green-700">Jane W.</h4>
-                <p class="text-sm text-gray-500">New Driver</p>
+    <!-- Enrollment Form Section -->
+    <section class="py-20 px-4 sm:px-6 bg-green-50">
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+
+            <!-- Left Side -->
+            <div class="space-y-8">
+
+                <div>
+                    <h3 class="text-4xl font-extrabold text-green-800 mb-4">
+                        Why Enroll With Us?
+                    </h3>
+
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        At Girigreen Driving School, we combine modern training,
+                        experienced instructors, and practical road experience to help
+                        you become a confident and responsible driver.
+                    </p>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="space-y-6">
+
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+                        <h4 class="text-xl font-bold text-green-700 mb-2">
+                            🚗 Professional Instructors
+                        </h4>
+
+                        <p class="text-gray-600">
+                            Learn from experienced and certified driving professionals.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+                        <h4 class="text-xl font-bold text-green-700 mb-2">
+                            📘 Flexible Courses
+                        </h4>
+
+                        <p class="text-gray-600">
+                            Choose between half course or full course packages based on your needs.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transition duration-300">
+                        <h4 class="text-xl font-bold text-green-700 mb-2">
+                            ✅ Modern Training Vehicles
+                        </h4>
+
+                        <p class="text-gray-600">
+                            Train using safe and modern dual-control vehicles.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="bg-white p-6 sm:p-8 rounded-xl shadow hover:shadow-2xl transition duration-300">
-                <p class="text-gray-700 mb-6 italic">
-                    "The modern cars and excellent teaching methods helped me pass my test on the first try!"
-                </p>
-                <h4 class="font-bold text-green-700">Mark T.</h4>
-                <p class="text-sm text-gray-500">Professional Driver</p>
+
+            <!-- Right Side Form -->
+            <div class="bg-white rounded-3xl shadow-2xl p-8 sm:p-10">
+
+                <div class="text-center mb-8">
+
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-green-800 mb-3">
+                        Student Enrollment Form
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Fill in your details below and submit your application.
+                    </p>
+
+                </div>
+
+                <form action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST"
+                    class="space-y-6">
+
+                    <input type="hidden"
+                        name="_subject"
+                        value="New Student Enrollment Submission">
+                        
+
+                    <!-- Name -->
+
+                    <input type="hidden"
+                        name="_next"
+                        value="thankyou.html">
+
+                    <div>
+                        <label class="block mb-2 font-semibold text-gray-700">
+                            Full Name
+                        </label>
+
+                        <input type="text"
+                            name="Full Name"
+                            required
+                            class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+                    </div>
+
+                    <!-- Grid -->
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <div>
+                            <label class="block mb-2 font-semibold text-gray-700">
+                                ID Number
+                            </label>
+
+                            <input type="text"
+                                name="ID Number"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 font-semibold text-gray-700">
+                                Gender
+                            </label>
+
+                            <select name="Gender"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+
+                                <option value="">Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Email + Phone -->
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <div>
+                            <label class="block mb-2 font-semibold text-gray-700">
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                name="Email"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 font-semibold text-gray-700">
+                                Mobile Number
+                            </label>
+
+                            <input type="tel"
+                                name="Mobile Number"
+                                required
+                                placeholder="07XXXXXXXX"
+                                class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+                        </div>
+
+                    </div>
+
+                    <!-- Course -->
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <div>
+                            <label class="block mb-2 font-semibold text-gray-700">
+                                Type of Course
+                            </label>
+
+                            <select name="Course Type"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+
+                                <option value="">Select Course</option>
+                                <option>Half Course</option>
+                                <option>Full Course</option>
+
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 font-semibold text-gray-700">
+                                Vehicle Category
+                            </label>
+
+                            <select name="Vehicle Category"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+
+                                <option value="">Select Category</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- License + Payment -->
+                    <div class="grid md:grid-cols-2 gap-6">
+
+                        <div>
+                            <label class="block mb-2 font-semibold text-gray-700">
+                                Held a License Before?
+                            </label>
+
+                            <select name="Held License Before"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+
+                                <option value="">Select Option</option>
+                                <option>Yes</option>
+                                <option>No</option>
+
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 font-semibold text-gray-700">
+                                Payment Method
+                            </label>
+
+                            <select name="Payment Method"
+                                required
+                                class="w-full rounded-xl border border-gray-300 px-5 py-4 focus:outline-none focus:ring-4 focus:ring-green-300 transition">
+
+                                <option value="">Select Method</option>
+                                <option>Mpesa</option>
+                                <option>Cash</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-green-600 to-green-800 text-white font-extrabold py-5 rounded-2xl shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300 text-lg">
+
+                        Submit Enrollment
+
+                    </button>
+
+                </form>
+
             </div>
-            <div class="bg-white p-6 sm:p-8 rounded-xl shadow hover:shadow-2xl transition duration-300">
-                <p class="text-gray-700 mb-6 italic">
-                    "Highly recommend Girigreen for anyone serious about becoming a safe and confident driver."
-                </p>
-                <h4 class="font-bold text-green-700">Lucy K.</h4>
-                <p class="text-sm text-gray-500">Student</p>
-            </div>
+
         </div>
+
     </section>
 
     <!-- Footer -->
-    <footer class="bg-green-900 text-white py-6 text-center mt-24">
+    <footer class="bg-green-900 text-white py-6 text-center">
         <p>&copy; 2025 Girigreen Driving School. All rights reserved.</p>
     </footer>
 
-    <!-- Mobile Nav Toggle -->
+    <!-- Mobile Nav -->
     <script>
-        const menuToggle = document.getElementById("menu-toggle");
+        const toggle = document.getElementById("menu-toggle");
         const navLinks = document.getElementById("nav-links");
-        menuToggle.addEventListener("click", () => {
+
+        toggle.addEventListener("click", () => {
             navLinks.classList.toggle("hidden");
         });
     </script>
+
+    <!-- Animations -->
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 1s ease forwards;
+        }
+
+        @keyframes slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-slide-up {
+            animation: slide-up 1s ease forwards;
+        }
+
+        @keyframes blob {
+
+            0%,
+            100% {
+                transform: translate(0px, 0px) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -50px) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
+        }
+
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
 
 </body>
 
